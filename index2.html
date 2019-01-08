@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Overpass+Mono" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Contrail+One" rel="stylesheet">
+    <link href="favicon.png" rel="shortcut icon" type="image/x-icon" />
+</head>
+
+<body>
+    <div id="search">test
+        <input id="search-field" type="text" name="search-field" onkeypress="return search(event)" />
+    </div>
+
+    <div class="container">
+        <div class="welcome-container">
+            <form method="get" name="x" action="http://duckduckgo.com/">
+                <input type="hidden" value="1" name="kh"></input>
+                <input type="hidden" value="1" name="kn"></input>
+                <input type="hidden" value="-1" name="kac"></input>
+                <input type="hidden" value="-2" name="kp"></input>
+                <input type="hidden" value="d" name="kj"></input>
+                <input type="hidden" value="r" name="k7"></input>
+                <input type="hidden" name="kt" value="g"></input>
+                <input type="search" id="mySearch" placeholder="Type to search" name="q"></input>
+            </form>
+        </div>
+        <div class="bookmark-container">
+            <div class="bookmark-set">
+                <div class="bookmark-title">Daily</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://pinkbike.com" target="_blank"><i class="material-icons" style="font-size:18px">directions_bike</i>
+                        Pinkbike</a>
+                    <a class="bookmark" href="https://punknews.org/" target="_blank"><i class="material-icons" style="font-size:18px">headset</i>
+                        Punknews</a>
+                    <a class="bookmark" href="https://github.com/websterkk" target="_blank"><i class="fa fa-github"
+                            style="font-size:18px"></i> Github</a>
+                </div>
+            </div>
+            <div class="bookmark-set">
+                <div class="bookmark-title">Reddit</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://reddit.com/r/linux" target="_blank"><i class="fa fa-reddit-alien"
+                            style="font-size:18px"></i> /r/linux</a>
+                    <a class="bookmark" href="https://reddit.com/r/linuxgaming" target="_blank"><i class="fa fa-reddit-alien"
+                            style="font-size:18px"></i> /r/linuxgaming</a>
+                    <a class="bookmark" href="https://reddit.com/r/unixporn" target="_blank"><i class="fa fa-reddit-alien"
+                            style="font-size:18px"></i> /r/unixporn</a>
+                </div>
+            </div>
+            <div class="bookmark-set">
+                <div class="bookmark-title">Email</div>
+                <div class="bookmark-inner-container">
+                    <a class="bookmark" href="https://mail.protonmail.com/inbox" target="_blank"><i class="fa fa-envelope"
+                            style="font-size:18px"></i> Protonmail</a>
+                    <a class="bookmark" href="https://mail.tutanota.com/mail/KgqfH8---c-0" target="_blank"><i class="fa fa-envelope"
+                            style="font-size:18px"></i> Tutanota</a>
+                    <a class="bookmark" href="https://gmail.com" target="_blank"><i class="fa fa-envelope" style="font-size:18px"></i>
+                        Gmail</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
