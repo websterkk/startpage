@@ -1,0 +1,160 @@
+body {
+
+    margin: 0px;
+    font-family: 'Overpass Mono', monospace;
+}
+
+.bgImg {
+    width: 100%;
+    height: 100vh;
+    background-image: url("../img/candh.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center; 
+}
+
+.container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+#clock {
+    font-family: 'Contrail One', cursive;
+    font-size: 92pt;
+    font-weight: 400;
+    color: #FDFDFD;
+    margin-bottom: .25em;
+}
+
+#mySearch {
+    width: 90%;
+    height: 50px;
+    background-color: #282A36;
+    border-left: 0px;
+    border-top: 0px;
+    border-right: 0px;
+    border-bottom: 3px #FDFDFD solid;
+    text-align: center;
+    font-size: 33px;
+}
+
+#date {
+    font-family: 'Contrail One', cursive;
+    font-size: 40pt;
+    font-weight: 400;
+    color: #FDFDFD;
+    margin-bottom: .25em;
+}
+
+#search {
+    width: 100%;
+    height: 100%;
+    background-color: #282A36;
+    display: none;
+    position: absolute;
+    box-sizing: border-box;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#search-field {
+    width: 90%;
+    padding: .75em 1em;
+    box-sizing: border-box;
+    background-color: #282A36;
+    border: solid 0px #282A36;
+    font-size: 15pt;
+    color: #FDFDFD;
+    outline: none;
+    border-radius: 6px;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.welcome-container {
+    width: 42%;
+    background-color: #282A36;
+    padding: 1em;
+    border-radius: 6px;
+    font-size: 13pt;
+    font-weight: 500;
+    color: #FDFDFD;
+    text-align: center;
+}
+.inline {
+    display: inline-block;
+}
+
+.linkHeader {
+    font-weight: 700;
+}
+
+.linkItem {
+    font-weight: 700;
+}
+
+.bookmark-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 65%;
+    margin: 1em 0em;
+}
+
+@media only screen and (max-width: 960px) {
+    .container {
+	position: absolute;
+	top: 50px;
+        height: auto;
+    }
+    .welcome-container {
+        width: 58%;
+    }
+    .container > .bookmark-container {
+        flex-direction: column;
+        width: 65%;
+    }
+    .bookmark-container > .bookmark-set {
+        width: auto;
+        margin: 0.5em 0em;
+    }
+    #mySearch {
+	font-size: 28px;
+    }
+}
+
+.bookmark-set{
+    padding: 1em;
+    background-color: #282A36;
+    color: #BEBEC1;
+    border-radius: 6px;
+    font-size: 12pt;
+    width: 69%;
+    height: 8em;
+    margin: 0em .5em;
+}
+.bookmark-inner-container {
+    overflow-y: hidden;
+    height: 80%;
+    vertical-align: top;
+}
+.bookmark-title {
+    font-size: 13pt;
+    font-weight: 700;
+    color: #FDFDFD;
+    margin: 0em 0em .35em .6em;
+}
+.bookmark {
+    text-decoration: none;
+    color: #BEBEC1;
+    display:block;
+    margin: .5em 0em;
+}
+.bookmark:hover {
+    color: #FDFDFD;
+}
